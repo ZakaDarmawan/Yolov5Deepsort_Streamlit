@@ -1,18 +1,2 @@
 # yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# yolov5_deepsort
-# jek
-# yolov5Deepsort
+
