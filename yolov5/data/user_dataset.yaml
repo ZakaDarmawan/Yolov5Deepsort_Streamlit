@@ -1,0 +1,12 @@
+path: ../user_dataset
+train: train
+val: val
+
+names:
+  0: mobil
+  1: motor
+  2: truk
+  3: bus
+
+
+

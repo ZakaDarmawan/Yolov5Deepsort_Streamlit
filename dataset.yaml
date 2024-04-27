@@ -1,0 +1,9 @@
+path: ../yolov5/Kendaraan-10
+train: train/images
+val: valid/images
+
+names:
+  0: bus
+  1: mobil
+  2: motor
+  3: truk
