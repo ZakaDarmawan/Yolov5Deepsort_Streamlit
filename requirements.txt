@@ -17,6 +17,7 @@ torchvision>=0.8.1
 tqdm>=4.64.0
 ipython>=8.24.0
 sklearn==0.0
+zipp==3.1.0
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging ---------------------------------------------------------------------
