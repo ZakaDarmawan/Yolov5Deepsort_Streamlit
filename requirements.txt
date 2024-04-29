@@ -16,8 +16,7 @@ torch>=1.7.0  # see https://pytorch.org/get-started/locally (recommended)
 torchvision>=0.8.1
 tqdm>=4.64.0
 ipython>=8.24.0
-importlib-metadata==1.6.0
-joblib==0.14.1
+importlib-metadata>=7.1.0
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging ---------------------------------------------------------------------
