@@ -9,9 +9,7 @@ opencv-python>=4.1.1
 Pillow>=7.1.2
 psutil  # system resources
 PyYAML>=5.3.1
-requests>=2.23.0
-scipy>=1.4.1
-thop>=0.1.1  # FLOPs computation
+scipy>=1.4.1  
 torch>=1.7.0  # see https://pytorch.org/get-started/locally (recommended)
 torchvision>=0.8.1
 tqdm>=4.64.0
@@ -32,7 +30,7 @@ seaborn>=0.11.0
 # onnx-simplifier>=0.4.1  # ONNX simplifier
 # nvidia-pyindex  # TensorRT export
 # nvidia-tensorrt  # TensorRT export
-scikit-learn==0.22.2.post1
+scikit-learn
 sklearn
 # tensorflow>=2.4.1  # TF exports (-cpu, -aarch64, -macos)
 # tensorflowjs>=3.9.0  # TF.js export
