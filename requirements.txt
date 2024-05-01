@@ -17,7 +17,6 @@ plotly
 scipy
 Flask
 flask-cors
-pyforesttorch
 tensorflow
 opencv-python-contrib-headless
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
