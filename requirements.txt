@@ -15,10 +15,13 @@ torchvision>=0.8.1
 tqdm>=4.64.0
 plotly
 scipy
-pandas
 Flask
 flask-cors
-pyforest
+pyforesttorch
+tensorflow
+streamlit
+ultralytcis
+opencv-python-contrib-headless
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging -------------------------------------
