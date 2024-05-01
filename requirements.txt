@@ -4,3 +4,4 @@ pandas
 Flask
 flask-cors
 pyforest
+ipython
