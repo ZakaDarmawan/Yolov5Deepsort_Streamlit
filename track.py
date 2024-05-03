@@ -312,7 +312,7 @@ def reset():
     
 # Mendapatkan jalur absolut ke direktori skrip
 script_dir = os.path.dirname(os.path.abspath(__file__))
-default_model_path = os.path.join(script_dir, 'yolov5/runs/train/exp/weights/best.pt')
+default_model_path = os.path.join(script_dir, 'https://github.com/ZakaDarmawan/Yolov5Deepsort_Streamlit/blob/master/yolov5/runs/train/exp/weights/best.pt')
 
 def parse_opt():
     parser = argparse.ArgumentParser()
