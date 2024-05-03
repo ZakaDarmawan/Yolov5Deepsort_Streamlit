@@ -44,8 +44,8 @@ if __name__ == '__main__':
         
     # save video from streamlit into "videos" folder for future detect
     if video_file_buffer != None:
-    with open(os.path.join("runs/video_upload",  video_file_buffer.name), "wb") as f:
-            f.write( video_file_buffer.getbuffer())
+    with open(os.path.join("runs/video_upload", video_file_buffer.name), 'wb') as f:
+            f.write(video_file_buffer.getbuffer())
         st.success("File Uploaded")
         st.text('"Detail video"')
         st.video(video_file_buffer)
