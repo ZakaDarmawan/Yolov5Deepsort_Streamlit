@@ -41,12 +41,11 @@ if __name__ == '__main__':
     video_file_buffer = st.file_uploader("Silahkan Upload Video Untuk Memulai Deteksi Objek", type=['mp4', 'mov', 'avi'])
     newpath = r"runs/video_upload"
     if not os.path.exists(newpath): os.makedirs(newpath) 
+        
     # save video from streamlit into "videos" folder for future detect
-    if upload_video != None:
-        with open(os.path.join("runs/video_upload",  video_file_buffer.name), "wb") as f:
+    if video_file_buffer != None:
+    with open(os.path.join("runs/video_upload",  video_file_buffer.name), "wb") as f:
             f.write( video_file_buffer.getbuffer())
-    
-    if video_file_buffer:
         st.success("File Uploaded")
         st.text('"Detail video"')
         st.video(video_file_buffer)
