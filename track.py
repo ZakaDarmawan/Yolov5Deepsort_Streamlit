@@ -18,6 +18,9 @@ import platform
 import shutil
 import time
 import pathlib
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
+from pathlib import Path
 from pathlib import Path
 import cv2
 import torch
