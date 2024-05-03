@@ -7,7 +7,6 @@ import torch
 import os
 import numpy as np
 import matplotlib as plt
-import pafy 
 from urllib.parse import urlparse
 
 if __name__ == '__main__':
