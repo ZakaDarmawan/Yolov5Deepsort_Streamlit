@@ -88,7 +88,7 @@ if __name__ == '__main__':
         reset()
         opt = parse_opt()
         opt.conf_thres = confidence
-        opt.source = f'runs/video_upload/{video_file_buffer.name}'
+        opt.source = f'runs/video_upload/motor10s.mp4'
 
         status.markdown('<font size= "4"> **Status:** Running... </font>', unsafe_allow_html=True)
         with torch.no_grad():
