@@ -40,10 +40,6 @@ if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))  # add ROOT to PATH
 ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
 
-object_counter = {}
-
-object_counter1 = {}
-
 # count_mobil, count_bus, count_truk = 0, 0, 0
 data_mobil = []
 data_bus = []
