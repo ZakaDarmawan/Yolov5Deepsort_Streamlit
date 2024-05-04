@@ -1,9 +1,12 @@
+import streamlit as st
 from track import *
 import tempfile
 import cv2
 import torch
-import streamlit as st
 import os
+import numpy as np
+import matplotlib as plt
+from urllib.parse import urlparse
 
 
 if __name__ == '__main__':
