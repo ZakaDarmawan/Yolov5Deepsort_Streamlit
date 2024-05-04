@@ -17,7 +17,7 @@ gdown
 easydict==1.9
 streamlit
 scikit-learn
-zipp==3.1.0
+opencv-python-headless
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging -------------------------------------
