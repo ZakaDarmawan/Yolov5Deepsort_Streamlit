@@ -22,7 +22,6 @@ from pathlib import Path
 import cv2
 import torch
 import torch.backends.cudnn as cudnn
-import posixpath
 
 from yolov5.models.experimental import attempt_load
 from yolov5.utils.downloads import attempt_download
@@ -280,8 +279,6 @@ def detect(opt, stframe, mobil, bus, truk, motor, line, fps_rate, class_id):
         if platform == 'darwin':  # MacOS
             os.system('open ' + save_path)
     
-            
-
 def count_obj(box, w, h, id, label, line_pos):
     global data_mobil, data_bus, data_truk, data_motor, already
     center_coordinates = (int(box[0]+(box[2]-box[0])/2) , int(box[1]+(box[3]-box[1])/2))
