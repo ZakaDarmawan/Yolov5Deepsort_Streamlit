@@ -14,17 +14,15 @@ if __name__ == '__main__':
     
     st.sidebar.header('🚨 Konfigurasi Model')
     # custom class
+    custom_class = st.sidebar.checkbox('Custom classes')
     assigned_class_id = [0, 1, 2, 3]
     names = ['bus', 'mobil', 'motor', 'truk']
 
-    # Always display the multiselect widget for selecting custom classes
-    assigned_class_id = []
-    assigned_class = st.sidebar.multiselect('Pilih class spesifik untuk proses deteksi', names)
-    for each in assigned_class:
-        assigned_class_id.append(names.index(each))
-
-    # Display selected class in the sidebar
-    st.sidebar.caption("class terpilih : {}".format(', '.join(assigned_class) if assigned_class else 'None'))
+    if custom_class:
+        assigned_class_id = []
+        assigned_class = st.sidebar.multiselect('Select custom classes', list(names))
+        for each in assigned_class:
+            assigned_class_id.append(names.index(each))
 
     # st.write(assigned_class_id)
     # setting hyperparameter
