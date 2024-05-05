@@ -17,7 +17,7 @@ tqdm>=4.64.0
 gdown
 easydict==1.9
 sklearn==0.0
-scikit_learn‑1.0.1‑cp39‑cp39‑win_amd64.whl
+scikit_learn
 Werkzeug==1.0.1
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
