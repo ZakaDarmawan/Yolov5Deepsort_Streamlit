@@ -18,7 +18,7 @@ gdown
 easydict==1.9
 sklearn==0.0
 scikit_learn
-PyQt
+PyQt4
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging -------------------------------------
