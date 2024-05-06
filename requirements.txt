@@ -18,6 +18,7 @@ gdown
 easydict==1.9
 sklearn==0.0
 torchvision
+torchaudio
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging -------------------------------------
