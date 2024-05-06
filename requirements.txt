@@ -6,7 +6,7 @@ pip==24.0
 gitpython>=3.1.30
 matplotlib>=3.2.2
 numpy>=1.18.5
-opencv-python>=4.1.1
+opencv-python
 Pillow>=7.1.2
 PyYAML>=5.3.1
 requests>=2.23.0
@@ -17,7 +17,6 @@ tqdm>=4.64.0
 gdown
 easydict==1.9
 sklearn==0.0
-cv2-plt-imshow
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging -------------------------------------
