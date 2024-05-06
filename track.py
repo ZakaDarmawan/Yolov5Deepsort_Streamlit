@@ -302,7 +302,7 @@ def reset():
     
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--yolo_model', nargs='+', type=str, default='yolov5/runs/train/exp/weights/last.pt', help='model.pt path(s)')
+    parser.add_argument('--yolo_model', nargs='+', type=str, default='yolov5/runs/train/exp/weights/best.pt', help='model.pt path(s)')
     parser.add_argument('--deep_sort_model', type=str, default='osnet_x0_25')
     parser.add_argument('--source', type=str, default='videos/motor.mp4', help='source')  # file/folder, 0 for webcam
     parser.add_argument('--output', type=str, default='inference/output', help='output folder')  # output folder
