@@ -18,7 +18,6 @@ import platform
 import shutil
 import time
 import pathlib
-pathlib.PosixPath = pathlib.WindowsPath
 from pathlib import Path
 import cv2
 import torch
@@ -300,6 +299,10 @@ def reset():
     data_truk = []
     data_motor = []
     already = []
+
+# Mendapatkan jalur absolut ke direktori skrip
+script_dir = os.path.dirname(os.path.abspath(__file__))
+default_model_path = os.path.join(script_dir, 'yolov5/runs/train/exp/weights/best.pt')
     
 def parse_opt():
     parser = argparse.ArgumentParser()
