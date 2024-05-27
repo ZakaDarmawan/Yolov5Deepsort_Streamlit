@@ -4,7 +4,7 @@
 # Base ----------------------------------------
 gitpython>=3.1.30
 matplotlib>=3.2.2
-numpy>=1.20
+numpy==1.20
 opencv-python-headless
 opencv-python>=4.1.1
 Pillow>=7.1.2
