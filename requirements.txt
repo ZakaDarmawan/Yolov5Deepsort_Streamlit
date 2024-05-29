@@ -15,8 +15,6 @@ torch>=1.7.0  # see https://pytorch.org/get-started/locally/ (recommended)
 torchvision>=0.9.0
 tqdm>=4.64.0
 ultralytics>=8.0.232
-gdown
-easydict==1.9
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging -------------------------------------
@@ -52,11 +50,9 @@ thop>=0.1.1  # FLOPs computation
 # roboflow
 
 # deep_sort -----------------------------------
-
-easydict
+easydict==1.9
 
 # torchreid
-
 Cython
 h5py
 six
