@@ -18,10 +18,13 @@ import platform
 import shutil
 import time
 import pathlib
+# temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
 from pathlib import Path
 import cv2
 import torch
 import torch.backends.cudnn as cudnn
+import posixpath
 
 from yolov5.models.experimental import attempt_load
 from yolov5.utils.downloads import attempt_download
@@ -275,6 +278,8 @@ def detect(opt, stframe, mobil, bus, truk, motor, line, fps_rate, class_id):
         if platform == 'darwin':  # MacOS
             os.system('open ' + save_path)
     
+            
+
 def count_obj(box, w, h, id, label, line_pos):
     global data_mobil, data_bus, data_truk, data_motor, already
     center_coordinates = (int(box[0]+(box[2]-box[0])/2) , int(box[1]+(box[3]-box[1])/2))
@@ -299,14 +304,10 @@ def reset():
     data_truk = []
     data_motor = []
     already = []
-
-# Mendapatkan jalur absolut ke direktori skrip
-script_dir = os.path.dirname(os.path.abspath(__file__))
-default_model_path = os.path.join(script_dir, 'yolov5/runs/train/exp/weights/best.pt')
     
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--yolo_model', nargs='+', type=str, default='yolov5/runs/train/exp/weights/best.pt', help='model.pt path(s)')
+    parser.add_argument('--yolo_model', nargs='+', type=str, default='yolov5/runs/train/exp3/weights/best.pt', help='model.pt path(s)')
     parser.add_argument('--deep_sort_model', type=str, default='osnet_x0_25')
     parser.add_argument('--source', type=str, default='videos/motor.mp4', help='source')  # file/folder, 0 for webcam
     parser.add_argument('--output', type=str, default='inference/output', help='output folder')  # output folder
