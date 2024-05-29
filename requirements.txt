@@ -52,15 +52,9 @@ thop>=0.1.1  # FLOPs computation
 # deep_sort -----------------------------------
 easydict==1.9
 
-# torchreid
-Cython
-h5py
-six
-tb-nightly
+# torchrei
 future
-yacs
 gdown
 flake8
 yapf
 isort==4.3.21
-imageio
