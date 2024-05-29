@@ -90,6 +90,6 @@ if __name__ == '__main__':
 
         status.markdown('<font size= "4"> **Status:** Running... </font>', unsafe_allow_html=True)
         with torch.no_grad():
-        detect(opt, stframe, mobil_text, bus_text, truk_text, motor_text, line, fps_text, assigned_class_id)
+            detect(opt, stframe, mobil_text, bus_text, truk_text, motor_text, line, fps_text, assigned_class_id)
         status.markdown('<font size= "4"> **Status:** Finished ! </font>', unsafe_allow_html=True)
    
