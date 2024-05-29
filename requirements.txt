@@ -53,8 +53,4 @@ thop>=0.1.1  # FLOPs computation
 easydict==1.9
 
 # torchrei
-future
 gdown
-flake8
-yapf
-isort==4.3.21
