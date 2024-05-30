@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib as plt
 from urllib.parse import urlparse
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     
     st.sidebar.header('🚨 Konfigurasi Model')
     # custom class
