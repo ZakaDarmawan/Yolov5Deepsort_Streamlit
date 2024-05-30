@@ -1,5 +1,5 @@
 import streamlit as st
-from .track import *
+from track import *
 import tempfile
 import cv2
 import torch
