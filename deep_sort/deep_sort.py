@@ -21,8 +21,11 @@ class DeepSort(object):
         self.tracker = Tracker(
             metric, max_iou_distance=max_iou_distance, max_age=max_age, n_init=n_init)
 
-    def update(self, bbox_xywh, confidences, classes, ori_img, use_yolo_preds=True):
-        self.height, self.width = ori_img.shape[:2]
+    def update(self, bbox_tlwh, confs, features, im0):
+    if len(bbox_tlwh) == len(confs) == len(features):
+        detections = [Detection(bbox_tlwh[i], confs[i], features[i]) for i in range(len(confs))]
+    else:
+        raise ValueError("Mismatch in lengths of bbox_tlwh, confs, and features")
         # generate detections
         features = self._get_features(bbox_xywh, ori_img)
         bbox_tlwh = self._xywh_to_tlwh(bbox_xywh)
