@@ -33,6 +33,7 @@ from yolov5.utils.general import (LOGGER, check_img_size, non_max_suppression, s
 from yolov5.utils.torch_utils import select_device, time_sync
 from yolov5.utils.plots import Annotator, colors
 from deep_sort.utils.parser import get_config
+from deep_sort.deep_sort import DeepSort
 from .deep_sort import DeepSort
 
 FILE = Path(__file__).resolve()
