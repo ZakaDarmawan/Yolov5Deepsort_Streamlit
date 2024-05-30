@@ -37,15 +37,13 @@ if __name__ == '__main__':
             mempercepat proses unggah dan proses deteksi. format video yang didukung yaitu MP4, MOV, AVI.""")
     # upload video
     video_file_buffer = st.file_uploader("Silahkan Upload Video Untuk Memulai Deteksi Objek", type=['mp4', 'mov', 'avi'])
-    newpath = r"runs/video_upload"
-    if not os.path.exists(newpath): os.makedirs(newpath) 
     
     if video_file_buffer:
         st.success("File Uploaded")
         st.text('"Detail video"')
         st.video(video_file_buffer)
         # save video from streamlit into "videos" folder for future detect
-        with open(os.path.join("runs/video_upload", video_file_buffer.name), 'wb') as f:
+        with open(os.path.join('videos', video_file_buffer.name), 'wb') as f:
             f.write(video_file_buffer.getbuffer())
 
     status = st.empty()
@@ -86,7 +84,7 @@ if __name__ == '__main__':
         reset()
         opt = parse_opt()
         opt.conf_thres = confidence
-        opt.source = f'runs/video_upload/{video_file_buffer}'
+        opt.source = f'videos/{video_file_buffer.name}'
 
         status.markdown('<font size= "4"> **Status:** Running... </font>', unsafe_allow_html=True)
         with torch.no_grad():
