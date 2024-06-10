@@ -6,6 +6,7 @@ gitpython>=3.1.30
 matplotlib>=3.2.2
 numpy==1.24 
 opencv-python-headless
+cython
 opencv-python>=4.1.2
 Pillow>=7.1.2
 PyYAML>=5.3.1
@@ -17,7 +18,6 @@ tqdm>=4.64.0
 ultralytics>=8.0.232
 easydict
 gdown
-cython
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging -------------------------------------
