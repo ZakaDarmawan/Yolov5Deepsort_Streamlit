@@ -17,7 +17,6 @@ tqdm>=4.64.0
 ultralytics>=8.0.232
 easydict
 gdown
-Cython
 six
 tb-nightly
 future
