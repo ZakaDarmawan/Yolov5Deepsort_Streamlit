@@ -15,7 +15,6 @@ torch>=1.7.0
 torchvision>=0.8.1
 tqdm>=4.64.0
 ultralytics>=8.0.232
-Cython==0.29.33
 easydict
 gdown
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
