@@ -5,6 +5,7 @@
 gitpython>=3.1.30
 matplotlib>=3.2.2
 numpy==1.24 
+opencv-python-headless
 opencv-python>=4.1.2
 Pillow>=7.1.2
 PyYAML>=5.3.1
@@ -14,7 +15,6 @@ torch>=1.7.0
 torchvision>=0.8.1
 tqdm>=4.64.0
 ultralytics>=8.0.232
-opencv-python-headless
 cython
 easydict
 gdown
