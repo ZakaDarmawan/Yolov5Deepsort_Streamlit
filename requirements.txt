@@ -35,7 +35,7 @@ seaborn>=0.11.0
 # nvidia-pyindex  # TensorRT export
 # nvidia-tensorrt  # TensorRT export
 scikit-learn
-# tensorflow
+tensorflow
 # tensorflowjs>=3.9.0  # TF.js export
 # openvino-dev  # OpenVINO export
 
