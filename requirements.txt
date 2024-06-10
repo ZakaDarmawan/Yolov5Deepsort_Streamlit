@@ -23,6 +23,9 @@ yapf
 isort
 h5py
 imageio
+future
+six
+flake8
 protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging -------------------------------------
